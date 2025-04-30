@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -296,12 +295,12 @@ const PublishProduct = () => {
             )}
           />
 
-          <div className="flex flex-col space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <div className="flex items-center space-x-2">
+          <div className="space-y-6">
+            <div className="space-y-2">
               <Button type="button" variant="outline" disabled>
                 Add Category
               </Button>
-              <div className="flex items-center">
+              <div className="mt-1">
                 <Link to="#" className="text-sm text-blue-600 hover:underline flex items-center">
                   How do I enable this button?
                   <HelpCircle className="ml-1 h-4 w-4" />
@@ -309,11 +308,11 @@ const PublishProduct = () => {
               </div>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="space-y-2">
               <Button type="button" variant="outline" disabled>
                 Add Region
               </Button>
-              <div className="flex items-center">
+              <div className="mt-1">
                 <Link to="#" className="text-sm text-blue-600 hover:underline flex items-center">
                   How do I enable this button?
                   <HelpCircle className="ml-1 h-4 w-4" />
