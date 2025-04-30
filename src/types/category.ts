@@ -34,3 +34,21 @@ export interface SearchFilters {
   priceRange?: PriceRange;
   location?: string;
 }
+
+export interface ProductFormData {
+  title: string;
+  description: string;
+  price: string;
+  condition: 'new' | 'used';
+  pricingType: 'fixed' | 'auction';
+  isDigital: boolean;
+  isOnsite: boolean;
+  category: string;
+  region: string;
+}
+
+export interface RegionType {
+  id: string;
+  name: string;
+  subregions?: RegionType[];
+}
