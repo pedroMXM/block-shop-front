@@ -1,5 +1,5 @@
 
-import { Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -25,6 +25,12 @@ const Navigation = () => {
             />
             <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
           </div>
+          <Link to="/publish">
+            <Button variant="outline" className="gap-2">
+              <Package className="h-5 w-5" />
+              Sell
+            </Button>
+          </Link>
           <Button variant="ghost" size="icon">
             <ShoppingCart className="h-5 w-5" />
           </Button>
