@@ -1,17 +1,19 @@
 
 import { Search, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <nav className="w-full bg-white border-b border-gray-200 py-4 px-6 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          <h1 className="text-2xl font-bold text-primary">NFT Market</h1>
+          <Link to="/" className="text-2xl font-bold text-primary">NFT Market</Link>
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-600 hover:text-primary">Explore</a>
-            <a href="#" className="text-gray-600 hover:text-primary">Collections</a>
-            <a href="#" className="text-gray-600 hover:text-primary">Artists</a>
+            <Link to="/" className="text-gray-600 hover:text-primary">Explore</Link>
+            <Link to="/advanced-search" className="text-gray-600 hover:text-primary">Advanced Search</Link>
+            <Link to="/" className="text-gray-600 hover:text-primary">Collections</Link>
+            <Link to="/" className="text-gray-600 hover:text-primary">Artists</Link>
           </div>
         </div>
         <div className="flex items-center space-x-4">
